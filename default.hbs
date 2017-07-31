@@ -5,9 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>{{@blog.title}}</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/css/foundation.min.css" />
+  {{ghost_head}}
 </head>
 <body class="{{body_class}}">
-  {{{body}}}
-  wow
+  <header>
+    <h1>수학교육웹진</h1>
+    <ul class="menu">
+      {{#get "tags" limit="all"}}
+        {{#foreach tags}}
+          <li><a href="{{url}}" class="tag tag-{{slug}}">{{name}}</a></li>
+        {{/foreach}}
+      {{/get}}
+    </ul>
+  </header>
+  <main>
+    {{{body}}}
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/js/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+  {{ghost_foot}}
 </body>
 </html>
