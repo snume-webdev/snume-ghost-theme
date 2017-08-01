@@ -1,5 +1,5 @@
 {{#foreach posts}}
-<article class="{{post_class}}">
+<article class="u-main-spacer sw-loop__item {{post_class}}">
     <header>
         <h2><a href="{{url}}">{{title}}</a></h2>
     </header>
@@ -14,4 +14,6 @@
 </article>
 {{/foreach}}
 
-{{pagination}}
+<div class="u-main-spacer sw-pagination">
+  {{pagination}}
+</div>

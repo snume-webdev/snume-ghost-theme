@@ -6,19 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>{{@blog.title}}</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/css/foundation.min.css" />
+  <link rel="stylesheet" href="{{asset "util.css"}}">
+  <link rel="stylesheet" href="{{asset "ghost-hack.css"}}">
+  <link rel="stylesheet" href="{{asset "main.css"}}">
   {{ghost_head}}
 </head>
+
 <body class="{{body_class}}">
-  <header>
-    <h1>수학교육웹진</h1>
-    <ul class="menu">
-      {{#get "tags" limit="all"}}
-        {{#foreach tags}}
-          <li><a href="{{url}}" class="tag tag-{{slug}}">{{name}}</a></li>
-        {{/foreach}}
-      {{/get}}
-    </ul>
-  </header>
+  {{> header}}
   <main>
     {{{body}}}
   </main>
