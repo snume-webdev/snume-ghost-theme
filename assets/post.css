@@ -1,15 +1,65 @@
+@font-face {
+  font-family: '1훈새마을운동R';
+  src: url('fonts/HoonSaemaulundongR.ttf');
+}
+.sw-post-content h1, h2, h3, p, li, ol, ul{
+font-family: '1훈새마을운동R';
+background: 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    outline: 0;
+
+
+}
+
 .sw-post-content h1 {
-  font-size: 2rem;
+  font-size: 70px;
+  letter-spacing: -5.25px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .sw-post-content h2 {
-  font-size: 1.5rem;
+  font-size: 40px;
+  letter-spacing: -3px;
+  font-weight: 600;
+  line-height: 1.384615384615385em;
+  text-transform: capitalize;
 }
 
 .sw-post-content h3 {
-  font-size: 1.3rem;
+    font-size: 23px;
+    line-height: 40px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: -2px;
+    text-transform: capitalize;
 }
 
 .sw-post-content p {
-  color: #444;
+  color: #444444;
+      font-size: 17px;
+    line-height: 30px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 22px;
+}
+
+
+
+.sw-post-content a {
+    color: #ababab;
+    line-height: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.sw-post-content a:hover {
+    color: #1abc9c;
+}
+
+.sw-post-content a:visited {
+    color: #9900ff;
 }
