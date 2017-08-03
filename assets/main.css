@@ -67,3 +67,7 @@ body {
   margin-top: 50px;
 }
 
+.sw-footer {
+  background-color: darkgray;
+  color: white;
+}
