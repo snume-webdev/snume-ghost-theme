@@ -43,11 +43,11 @@ body {
 
 .sw-site-menu {
   margin-top: 30px;
-  background-color: blue;
+  background-color: cadetblue;
 }
 
 .sw-site-menu__link {
-  color: white;
+  color:beige;
 }
 
 .sw-loop__item {
