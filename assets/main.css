@@ -43,11 +43,11 @@ body {
 
 .sw-site-menu {
   margin-top: 30px;
-  background-color: blue;
+  background-color: cadetblue;
 }
 
 .sw-site-menu__link {
-  color: white;
+  color:beige;
 }
 
 .sw-loop__item {
@@ -67,3 +67,13 @@ body {
   margin-top: 50px;
 }
 
+.sw-footer {
+  padding-top: 50px;
+  padding-bottom: 10px;
+  background-color: lightgray;
+  color: black;
+}
+
+.sw-footer-logo {
+  height : 50px;
+}
