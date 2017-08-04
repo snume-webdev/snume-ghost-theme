@@ -68,6 +68,12 @@ body {
 }
 
 .sw-footer {
-  background-color: darkgray;
-  color: white;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  background-color: lightgray;
+  color: black;
+}
+
+.sw-footer-logo {
+  height : 50px;
 }
