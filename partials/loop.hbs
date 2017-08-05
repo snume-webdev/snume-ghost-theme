@@ -3,14 +3,18 @@
     <header>
         <h2><a href="{{url}}">{{title}}</a></h2>
     </header>
-    <section>
-        <p><a href="{{url}}">{{excerpt words="26"}}</a></p>
-    </section>
     <footer>
         {{#if author.profile_image}}<img src="{{author.profile_image}}" alt="{{author.name}}" />{{/if}}
-        {{tags prefix=" on "}}
-        <time datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD MMMM YYYY"}}</time>
+        <time datetime="{{date format="YYYY-MM-DD"}}">{{date format="YYYY-MM-DD"}}</time>
+        {{tags prefix="  "}}
+
     </footer>
+    <br>
+    <section>
+
+        <p>{{excerpt words="26"}}...</p>
+    </section>
+
 </article>
 {{/foreach}}
 

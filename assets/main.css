@@ -52,6 +52,9 @@ body {
 
 .sw-loop__item {
   margin-top: 40px;
+  padding-left: 23px;
+  padding-right: 195px;
+
 }
 
 .sw-pagination {
@@ -77,3 +80,4 @@ body {
 .sw-footer-logo {
   height : 50px;
 }
+
