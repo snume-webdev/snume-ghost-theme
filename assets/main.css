@@ -33,9 +33,27 @@ BEM 방법론 링크: https://medium.com/witinweb/css-%EB%B0%A9%EB%B2%95%EB%A1%A
 
 */
 
+
+@font-face {
+  font-family: '1훈새마을운동R';
+  src: url('fonts/HoonSaemaulundongR.ttf');
+  font-family: '나눔고딕';
+  src: url('fonts/NanumGothic.ttf');
+  font-family: '나눔고딕B';
+  src: url('fonts/NanumGothicBlod.ttf');
+  font-family: '나눔고딕EB';
+  src: url('fonts/NanumGothicExtraBold.ttf');
+  font-family: '나눔고딕L';
+  src: url('fonts/NanumGothicLight.ttf');
+}
+
+
+
 body {
   margin: 30px 0;
+
 }
+
 
 .sw-logo-container {
   text-align: center;
@@ -53,9 +71,21 @@ body {
 .sw-loop__item {
   margin-top: 40px;
   padding-left: 23px;
-  padding-right: 195px;
+}
+
+.sw-loop__item footer{
+  color: lightgray;
 
 }
+
+.sw-loop__item a{
+  font-weight: bold;
+  color: black;
+
+}
+
+.sw-loop__item a:hover {
+  color: red;}
 
 .sw-pagination {
   margin-top: 50px;
@@ -64,6 +94,7 @@ body {
 
 .sw-post-content {
   margin-top: 50px;
+
 }
 
 .sw-tag-ctx__header {
