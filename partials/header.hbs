@@ -2,9 +2,15 @@
   <div class="sw-logo-container">
     <h1><a href="{{@blog.url}}"><img src="{{asset 'img/mainlogo.png'}}" alt=""></a></h1>
   </div>
-  <ul class="sw-site-menu menu">
-    {{#get "tags" limit="all"}} {{#foreach tags}}
-    <li><a href="{{url}}" class="sw-site-menu__link tag tag-{{slug}}">{{name}}</a></li>
-    {{/foreach}} {{/get}}
-  </ul>
+
+  <div class="sw-site-menumobile" data-responsive-toggle="example-menu" data-hide-for="medium">
+    <button class="sw-mobile-category" type="button" data-toggle="example-menu">카테고리</button>
+  </div>
+  <div class="" id="example-menu">
+    <ul class="sw-site-menuresponsive dropdown menu vertical medium-horizontal" data-dropdown-menu>
+      {{#get "tags" limit="all"}} {{#foreach tags}}
+      <li><a href="{{url}}" class="sw-site-menu__link tag tag-{{slug}}">{{name}}</a></li>
+      {{/foreach}} {{/get}}
+    </ul>
+  </div>
 </header>

@@ -42,6 +42,14 @@ BEM 방법론 링크: https://medium.com/witinweb/css-%EB%B0%A9%EB%B2%95%EB%A1%A
   background-color: cadetblue;
 }
 
+.sw-site-menuresponsive {
+  background-color: cadetblue;
+}
+
+
+.sw-site-menumobile {
+background-color: #60BD89;
+}
 .sw-site-menu__link {
   color:beige;
 }
@@ -73,3 +81,17 @@ BEM 방법론 링크: https://medium.com/witinweb/css-%EB%B0%A9%EB%B2%95%EB%A1%A
 .sw-footer-logo {
   height : 50px;
 }
+
+.sw-mobile-category{
+  color:#fff;
+  border:none;
+  position:relative;
+  height:30px;
+  font-size:1.0em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+
+
