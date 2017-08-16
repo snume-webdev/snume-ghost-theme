@@ -33,7 +33,6 @@ BEM 방법론 링크: https://medium.com/witinweb/css-%EB%B0%A9%EB%B2%95%EB%A1%A
 
 */
 
-
 @font-face {
   font-family: '1훈새마을운동R';
   src: url('fonts/HoonSaemaulundongR.ttf');
@@ -47,13 +46,10 @@ BEM 방법론 링크: https://medium.com/witinweb/css-%EB%B0%A9%EB%B2%95%EB%A1%A
   src: url('fonts/NanumGothicLight.ttf');
 }
 
-
-
 body {
   margin: 30px 0;
 
 }
-
 
 .sw-logo-container {
   text-align: center;
@@ -64,6 +60,14 @@ body {
   background-color: cadetblue;
 }
 
+.sw-site-menuresponsive {
+  background-color: cadetblue;
+}
+
+
+.sw-site-menumobile {
+background-color: #60BD89;
+}
 .sw-site-menu__link {
   color:beige;
 }
@@ -112,3 +116,14 @@ body {
   height : 50px;
 }
 
+.sw-mobile-category{
+  color:#fff;
+  border:none;
+  position:relative;
+  height:30px;
+  font-size:1.0em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
