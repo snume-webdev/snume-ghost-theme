@@ -1,16 +1,3 @@
-@font-face {
-  font-family: '1훈새마을운동R';
-  src: url('fonts/HoonSaemaulundongR.ttf');
-  font-family: '나눔고딕';
-  src: url('fonts/NanumGothic.ttf');
-  font-family: '나눔고딕B';
-  src: url('fonts/NanumGothicBlod.ttf');
-  font-family: '나눔고딕EB';
-  src: url('fonts/NanumGothicExtraBold.ttf');
-  font-family: '나눔고딕L';
-  src: url('fonts/NanumGothicLight.ttf');
-}
-
 .sw-post-content h1, h2, h3, p, li, ol, ul{
   background: 0;
   border: 0;
