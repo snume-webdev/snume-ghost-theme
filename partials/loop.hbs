@@ -1,17 +1,13 @@
 {{#foreach posts}}
 <article class="u-main-spacer sw-loop__item {{post_class}}">
-    <header>
-        <h2><a href="{{url}}">{{title}}</a></h2>
-    </header>
-    <footer>
-        <time datetime="{{date format="YYYY-MM-DD"}}">{{date format="YYYY-MM-DD"}}</time>
-        {{tags prefix="  "}}
-    </footer>
-    <br>
-    <section>
-
-        <p>{{excerpt words="26"}}...</p>
-    </section>
+  <header>
+    <h2><a href="{{url}}">{{title}}</a></h2>
+    <div class="sw-loop__item__meta">
+      {{tags prefix="  "}}
+      <time class="sw-loop__date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="YYYY-MM-DD"}}</time>
+    </div>
+  </header>
+  <p class="sw-loop__excerpt">{{excerpt words="26"}}...</p>
 
 </article>
 {{/foreach}}
@@ -19,5 +15,3 @@
 <div class="u-main-spacer sw-pagination">
   {{pagination}}
 </div>
-
-

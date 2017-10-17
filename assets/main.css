@@ -33,13 +33,18 @@ BEM 방법론 링크: https://medium.com/witinweb/css-%EB%B0%A9%EB%B2%95%EB%A1%A
 
 */
 
-body {
-  margin: 30px 0;
-
+.sw-logo {
+  text-align: center;
 }
 
-.sw-logo-container {
-  text-align: center;
+.sw-logo__link {
+  display: inline-block;
+  padding: 30px 20px 20px;
+}
+
+.sw-logo__img {
+  width: 258px;
+  height: 147px;
 }
 
 .sw-site-menu {
@@ -51,22 +56,26 @@ body {
   background-color: cadetblue;
 }
 
-
 .sw-site-menumobile {
-background-color: #60BD89;
+  display: none;
+  background-color: #60BD89;
 }
+
 .sw-site-menu__link {
   color:beige;
 }
 
 .sw-loop__item {
   margin-top: 40px;
-  padding-left: 23px;
 }
 
-.sw-loop__item footer{
-  color: lightgray;
+.sw-loop__item__meta {
+  padding-left: 2px;
+}
 
+.sw-loop__date {
+  color: lightgray;
+  margin-left: 5px;
 }
 
 .sw-loop__item a{
@@ -78,14 +87,14 @@ background-color: #60BD89;
 .sw-loop__item a:hover {
   color: red;}
 
+.sw-loop__excerpt {
+  margin-top: 20px;
+  padding-left: 2px;
+}
+
 .sw-pagination {
   margin-top: 50px;
   text-align: center;
-}
-
-.sw-post-content {
-  margin-top: 50px;
-
 }
 
 .sw-tag-ctx__header {
@@ -93,8 +102,9 @@ background-color: #60BD89;
 }
 
 .sw-footer {
+  margin-top: 30px;
   padding-top: 50px;
-  padding-bottom: 10px;
+  padding-bottom: 40px;
   background-color: lightgray;
   color: black;
 }
@@ -108,9 +118,15 @@ background-color: #60BD89;
   border:none;
   position:relative;
   height:30px;
-  font-size:1.0em;
-  padding:0 2em;
+  padding:0 1em;
   cursor:pointer;
   transition:800ms ease all;
   outline:none;
+}
+
+@media (max-width: 1000px) {
+  .sw-footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }

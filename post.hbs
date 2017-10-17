@@ -5,8 +5,16 @@
 
 {{!-- Everything inside the #post tags pulls data from the post --}}
 {{#post}}
+<div class="sw-post">
+  <header class="sw-post-header u-main-spacer">
+    <h1 class="sw-post-title">{{title}}</h1>
+    <section class="sw-post-meta">
+      <time class="sw-post-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="YYYY-MM-DD"}}</time>
+    </section>
+  </header>
 
-<section class="sw-post-content u-main-spacer">
-  {{content}}
-</section>
+  <section class="sw-post-content u-main-spacer">
+    {{content}}
+  </section>
+</div>
 {{/post}}

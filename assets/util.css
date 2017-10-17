@@ -2,9 +2,18 @@
 초보자는 main.css 파일에 코딩하세요
 */
 
-
 .u-main-spacer {
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.u-mobile-linebreak {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .u-mobile-linebreak {
+    display: block;
+  }
 }
